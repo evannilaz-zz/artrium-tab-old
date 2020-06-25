@@ -29,7 +29,7 @@ body {
     border-bottom-left-radius: 28px;
     border: 1.5px solid #b2bec3;
     padding-left: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: -apple-system, "Inter", sans-serif;
     font-size: 15px;
     transition: all .5s;
     box-shadow: 2px 2px 15px rgba(0,0,0,.2);
@@ -65,10 +65,16 @@ body {
 }
 
 #addBookmark {
+    display: flex;
+    flex-direction: row-reverse;
     position: absolute;
     top: 55vh;
     margin-top: 30px;
     transition: all .5s;
+}
+
+#addBookmark>* {
+    margin-left: 15px;
 }
 
 #addBookmark button {
@@ -77,7 +83,7 @@ body {
     border: 1.5px solid #b2bec3;
     background: #f6f9fc;
     border-radius: 13px;
-    font-family: "Inter", sans-serif;
+    font-family: -apple-system, "Inter", sans-serif;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
     transition: all .5s;
     cursor: pointer;
@@ -97,7 +103,7 @@ body {
     z-index: 2;
     background: #f6f9fc;
     transition: all .8s;
-    color: gray;
+    color: black;
 }
 
 #overlay #header {
@@ -133,8 +139,7 @@ body {
     width: 200px;
     height: 25px;
     font-size: 15px;
-    font-family: "Inter", sans-serif;
-    color: gray;
+    font-family: -apple-system, "Inter", sans-serif;
     text-align: center;
     transition: all .35s ease-in-out;
 }
@@ -155,7 +160,7 @@ body {
     margin-top: 60px;
     background: none;
     border: 1px solid #b2bec3;
-    font-family: "Inter", sans-serif;
+    font-family: -apple-system, "Inter", sans-serif;
     font-size: 13px;
     width: 70px;
     height: 30px;
@@ -169,3 +174,36 @@ body {
     background: #b2bec3;
     color: #f6f9fc;
 }
+
+.bookmark {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background: #f6f9fc;
+    border: 1.5px solid #b2bec3;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    transition: box-shadow .5s, transform .2s;
+}
+
+.bookmark:hover {
+    box-shadow: -4px 4px 10px rgba(0,0,0,.2);
+}
+
+.bookmark:active {
+    transform: scale(.9);
+}
+
+/* 
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 170vh;
+    z-index: -1;
+} */

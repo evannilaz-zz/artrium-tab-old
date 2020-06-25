@@ -1,4 +1,3 @@
-const body = document.querySelector("body");
 const bookmarkTab = document.querySelector("#addBookmark");
 const overlay = document.querySelector("#overlay");
 const buttons = document.querySelector("#buttons");
@@ -15,10 +14,12 @@ function saveBookmark() {
 
 function addBookmark(url,name) {
     const link = document.createElement("a");
+    const id = bookmarks.length;
     link.href = url;
     link.innerText = name;
     link.classList.add("bookmark");
-    // body.appendChild(link);
+    link.id = id;
+    bookmarkTab.appendChild(link);
     const bookmarkObject = {
         url: url,
         name: name
@@ -39,9 +40,12 @@ function hideOverlay() {
 
 function handleBookmarkCreate(event) {
     event.preventDefault();
-    const url = bookmarkCreate.querySelector("#url").value;
-    const name = bookmarkCreate.querySelector("#name").value;
-    addBookmark(url,name);
+    const url = bookmarkCreate.querySelector("#url");
+    const name = bookmarkCreate.querySelector("#name");
+    addBookmark(url.value,name.value);
+    alert(`Bookmark '${name.value}' successfully created!`)
+    url.value = "";
+    name.value = "";
 }
 
 function loadBookmark() {
@@ -55,12 +59,12 @@ function loadBookmark() {
         )
     }
 }
-
-function init() {
-    loadBookmark();
-    bookmarkTab.addEventListener("submit",showOverlay);
-    closeButton.addEventListener("click",hideOverlay);
-    bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
-}
-
+    
+    function init() {
+        loadBookmark();
+        bookmarkTab.addEventListener("submit",showOverlay);
+        closeButton.addEventListener("click",hideOverlay);
+        bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
+    }
+    
 init();
