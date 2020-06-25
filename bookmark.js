@@ -52,19 +52,17 @@ function loadBookmark() {
     const loadedBookmarks = localStorage.getItem(BOOKMARK_LS);
     if (loadedBookmarks !== null) {
         const parsedBookmarks = JSON.parse(loadedBookmarks);
-        parsedBookmarks.forEach(
-            function(bookmark) {
-                addBookmark(bookmark.url, bookmark.name);
-            }
-        )
+        parsedBookmarks.forEach((bookmark) => {
+            addBookmark(bookmark.url, bookmark.name);
+        })
     }
 }
     
-    function init() {
-        loadBookmark();
-        bookmarkTab.addEventListener("submit",showOverlay);
-        closeButton.addEventListener("click",hideOverlay);
-        bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
-    }
+function init() {
+    loadBookmark();
+    bookmarkTab.addEventListener("submit",showOverlay);
+    closeButton.addEventListener("click",hideOverlay);
+    bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
+}
     
 init();

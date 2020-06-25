@@ -1,1 +1,209 @@
-@import url(https://rsms.me/inter/inter.css);html{font-family:Inter,sans-serif}@supports (font-variation-settings:normal){html{font-family:'Inter var',sans-serif}}body{display:flex;justify-content:center;color:#fff;text-align:center;box-sizing:border-box;overflow:hidden}#search{position:absolute;top:45vh;transition:all .5s}#search input[type=text]{float:left;background-color:#f6f9fc;width:430px;height:40px;border-top-left-radius:28px;border-bottom-left-radius:28px;border:1.5px solid #b2bec3;padding-left:20px;font-family:-apple-system,Inter,sans-serif;font-size:15px;transition:all .5s;box-shadow:2px 2px 15px rgba(0,0,0,.2)}#search input[type=text]:focus{width:530px}#search button{float:left;background:#3498db;border-top-right-radius:28px;border-bottom-right-radius:28px;height:45.1px;width:55px;border:1.5px solid #b2bec3;border-left:none;box-shadow:2px 2px 15px rgba(0,0,0,.2);cursor:pointer}#search button:hover{background:#2980b9}#search button img{margin-top:1px;margin-right:1px;height:32px;width:auto}#addBookmark{display:flex;flex-direction:row-reverse;position:absolute;top:55vh;margin-top:30px;transition:all .5s}#addBookmark>*{margin-left:15px}#addBookmark button{width:200px;height:38px;border:1.5px solid #b2bec3;background:#f6f9fc;border-radius:13px;font-family:-apple-system,Inter,sans-serif;box-shadow:2px 2px 10px rgba(0,0,0,.2);transition:all .5s;cursor:pointer}#addBookmark button:hover{box-shadow:4px 4px 10px rgba(0,0,0,.2)}#overlay{box-shadow:4px 4px 10px rgba(0,0,0,.2);margin-top:100vw;border-radius:50px;border:2px solid #b2bec3;width:40vw;height:445px;z-index:2;background:#f6f9fc;transition:all .8s;color:#000}#overlay #header{position:relative;font-size:24px;font-weight:500;top:70px}#overlay>button{position:relative;top:20px;font-size:25px;background:0 0;border:none;cursor:pointer;color:gray}#create{display:flex;flex-direction:column;align-items:center}#create input{display:inline-block;border:none;background:0 0;border-bottom:1.5px solid #b2bec3;width:200px;height:25px;font-size:15px;font-family:-apple-system,Inter,sans-serif;text-align:center;transition:all .35s ease-in-out}#create input:nth-child(1){margin-top:150px}#create input:nth-child(2){margin-top:30px}#create input:focus{width:250px}#create button{margin-top:60px;background:0 0;border:1px solid #b2bec3;font-family:-apple-system,Inter,sans-serif;font-size:13px;width:70px;height:30px;border-radius:15px;cursor:pointer;transition:all .3s}#create button:hover{border:1px solid #f6f9fc;background:#b2bec3;color:#f6f9fc}.bookmark{display:block;padding:15px;text-decoration:none;color:#000;border-radius:10px;width:150px;height:20px;background:#f6f9fc;border:1.5px solid #b2bec3;box-shadow:2px 2px 10px rgba(0,0,0,.2);transition:box-shadow .5s,transform .2s}.bookmark:hover{box-shadow:4px 4px 10px rgba(0,0,0,.2)}.bookmark:active{transform:scale(.9)}
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    /* background-color: #2c2c2c; */
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#search {
+    position: absolute;
+    top: 45vh;
+    transition: all .5s;
+}
+
+#search input[type=text] {
+    float: left;
+    background-color: #f6f9fc;
+    width: 430px;
+    height: 40px;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border: 1.5px solid #b2bec3;
+    padding-left: 20px;
+    font-family: -apple-system, "Inter", sans-serif;
+    font-size: 15px;
+    transition: all .5s;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+
+#search input[type=text]:focus {
+    width: 530px;
+}
+
+#search button {
+    float: left;
+    /* width: 20%; */
+    background: #3498db;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    height: 45.1px;
+    width: 55px;
+    border: 1.5px solid #b2bec3;
+    border-left: none;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+#search button:hover {
+    background: #2980b9;
+}
+
+#search button img {
+    margin-top: 1px;
+    margin-right: 1px;
+    height: 32px;
+    width: auto;
+}
+
+#addBookmark {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 55vh;
+    margin-top: 30px;
+    transition: all .5s;
+}
+
+#addBookmark>* {
+    margin-left: 15px;
+}
+
+#addBookmark button {
+    width: 200px;
+    height: 38px;
+    border: 1.5px solid #b2bec3;
+    background: #f6f9fc;
+    border-radius: 13px;
+    font-family: -apple-system, "Inter", sans-serif;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#addBookmark button:hover {
+    box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+}
+
+#overlay {
+    box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+    margin-top: 100vw;
+    border-radius: 50px;
+    border: 2px solid #b2bec3;
+    width: 40vw;
+    height: 445px;
+    z-index: 2;
+    background: #f6f9fc;
+    transition: all .8s;
+    color: black;
+}
+
+#overlay #header {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    top: 70px;
+}
+
+#overlay>button {
+    position: relative;
+    /* left: 370px; */
+    /* left: 30%; */
+    top: 20px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#create input {
+    display: inline-block;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid #b2bec3;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    font-family: -apple-system, "Inter", sans-serif;
+    text-align: center;
+    transition: all .35s ease-in-out;
+}
+
+#create input:nth-child(1) {
+    margin-top: 150px;
+}
+
+#create input:nth-child(2) {
+    margin-top: 30px;
+}
+
+#create input:focus {
+    width: 250px;
+}
+
+#create button {
+    margin-top: 60px;
+    background: none;
+    border: 1px solid #b2bec3;
+    font-family: -apple-system, "Inter", sans-serif;
+    font-size: 13px;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#create button:hover {
+    border: 1px solid #f6f9fc;
+    background: #b2bec3;
+    color: #f6f9fc;
+}
+
+.bookmark {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+    background: #f6f9fc;
+    border: 1.5px solid #b2bec3;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    transition: box-shadow .5s, transform .2s;
+}
+
+.bookmark:hover {
+    box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+}
+
+.bookmark:active {
+    transform: scale(.9);
+}
+
+/* 
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 170vh;
+    z-index: -1;
+} */
