@@ -10,16 +10,18 @@
             <input type="text" placeholder=" Search Google" autocomplete="off" autofocus spellcheck="false" required>
             <button type="submit"><img src="search.png"></button>
         </form>
-        <form id="bookmark">
+        <form id="addBookmark">
             <button type="submit"> + Add Bookmark</button>
         </form>
-        <div id="overlay" class="hidden">
+        <div id="overlay">
             <span id="header">Create Bookmark</span>
-            <button id="exit">✕</button>
             <form id="create">
-                <input type="url" placeholder="URL" autocomplete="off" spellcheck="false" required>
-                <input type="text" placeholder="Bookmark Name" autocomplete="off" spellcheck="false">
-                <button type="submit">Create</button>
+                <input type="url" placeholder="URL" autocomplete="off" spellcheck="false" required id="url">
+                <input type="text" placeholder="Bookmark Name" autocomplete="off" spellcheck="false" required id="name">
+                <div id="buttons">
+                    <button type="submit">Create</button>
+                    <button type="button" id="cancel">Cancel</button>
+                </div>
             </form>
         </div>
         <script src="search.js"></script>

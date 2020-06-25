@@ -64,14 +64,14 @@ body {
     width: auto;
 }
 
-#bookmark {
+#addBookmark {
     position: absolute;
     top: 55vh;
     margin-top: 30px;
     transition: all .5s;
 }
 
-#bookmark button {
+#addBookmark button {
     width: 200px;
     height: 38px;
     border: 1.5px solid #b2bec3;
@@ -83,17 +83,17 @@ body {
     cursor: pointer;
 }
 
-#bookmark button:hover {
+#addBookmark button:hover {
     box-shadow: -4px 4px 10px rgba(0,0,0,.2);
 }
 
 #overlay {
     box-shadow: 4px 4px 10px rgba(0,0,0,.2);
     margin-top: 100vw;
-    border-radius: 3vh;
+    border-radius: 50px;
     border: 2px solid #b2bec3;
     width: 40vw;
-    height: 50vh;
+    height: 445px;
     z-index: 2;
     background: #f6f9fc;
     transition: all .8s;
@@ -105,13 +105,12 @@ body {
     font-size: 24px;
     font-weight: 500;
     top: 70px;
-    left: 17px;
 }
 
 #overlay>button {
-    position: absolute;
+    position: relative;
     /* left: 370px; */
-    left: 90%;
+    /* left: 30%; */
     top: 20px;
     font-size: 25px;
     background: none;
@@ -131,11 +130,11 @@ body {
     border: none;
     background: none;
     border-bottom: 1.5px solid #b2bec3;
-    width: 170px;
+    width: 200px;
     height: 25px;
     font-size: 15px;
     font-family: "Inter", sans-serif;
-    color: white;
+    color: gray;
     text-align: center;
     transition: all .35s ease-in-out;
 }
@@ -149,7 +148,7 @@ body {
 }
 
 #create input:focus {
-    width: 200px;
+    width: 250px;
 }
 
 #create button {
@@ -162,4 +161,11 @@ body {
     height: 30px;
     border-radius: 15px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+#create button:hover {
+    border: 1px solid #f6f9fc;
+    background: #b2bec3;
+    color: #f6f9fc;
 }
