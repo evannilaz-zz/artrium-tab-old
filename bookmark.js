@@ -1,7 +1,6 @@
-const bookmarkTab = document.querySelector("#addBookmark");
+const bookmarkTab = document.querySelector("#bookmarkList");
 const overlay = document.querySelector("#overlay");
-const buttons = document.querySelector("#buttons");
-const closeButton = buttons.querySelector("#cancel");
+const closeButton = document.querySelector("#cancel");
 const bookmarkCreate = overlay.querySelector("#create");
 
 const BOOKMARK_LS = "bookmark";
