@@ -31,7 +31,7 @@ body {
     padding-left: 20px;
     font-family: -apple-system, "Inter", sans-serif;
     font-size: 15px;
-    transition: all .5s;
+    transition: all .5s .3s;
     box-shadow: 2px 2px 15px rgba(0,0,0,.2);
 }
 
@@ -41,16 +41,16 @@ body {
 
 #search button {
     float: left;
-    /* width: 20%; */
     background: #3498db;
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
-    height: 45.1px;
+    height: 45px;
     width: 55px;
     border: 1.5px solid #b2bec3;
     border-left: none;
     box-shadow: 2px 2px 15px rgba(0,0,0,.2);
     cursor: pointer;
+    transition: all .25s;
 }
 
 #search button:hover {
@@ -229,4 +229,8 @@ body {
 #hidden {
     display: none;
     transform: translateY(-90vw);
+}
+
+* {
+    outline: none;
 }
