@@ -231,6 +231,15 @@ body {
     transform: translateY(-90vw);
 }
 
+#imgDsc {
+    position: absolute;
+    text-align: right;
+    top: 15px;
+    right: 15px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    font-size: 13px;
+}
+
 * {
     outline: none;
 }

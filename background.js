@@ -38,10 +38,13 @@ function bringPhoto() {
 function setBackground(src,alt,owner,height) {
     const image = new Image();
     const description = document.createElement("span");
+    description.id = "imgDsc";
+    description.innerText = `Taken by ${owner}. From Unsplash.`;
     image.src = src;
     image.alt = `${alt}, by ${owner}. Provided by Unsplash.`;
     image.id = "background";
     body.appendChild(image);
+    body.appendChild(description);
 }
 
 function init() {

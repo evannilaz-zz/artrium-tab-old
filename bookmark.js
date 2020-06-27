@@ -4,7 +4,6 @@ const closeButton = document.querySelector("#cancel");
 const removeButton = document.querySelectorAll(".remove");
 const bookmark = document.querySelectorAll(".bookmark");
 const bookmarkCreate = overlay.querySelector("#create");
-console.log(bookmark);
 
 const BOOKMARK_LS = "bookmark";
 
