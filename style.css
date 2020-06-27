@@ -66,10 +66,11 @@ body {
 
 #bookmarkList {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     position: absolute;
     top: 55vh;
     margin-top: 30px;
+    /* width: 80vw; */
     transition: all .5s;
 }
 
@@ -77,7 +78,7 @@ body {
     margin-left: 15px;
 }
 
-#bookmarkList button {
+#bookmarkList button[type=submit] {
     width: 200px;
     height: 38px;
     border: 1.5px solid #b2bec3;
@@ -85,16 +86,38 @@ body {
     border-radius: 13px;
     font-family: -apple-system, "Inter", sans-serif;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
-    transition: all .5s;
+    transition: all .4s;
     cursor: pointer;
+    order: 9999999999999999999999999999;
 }
 
-#bookmarkList button:active {
-    transform: scale(.9);
+#bookmarkList button[type=submit]:active {
+    transform: scale(.95);
 }
 
-#bookmarkList button:hover {
+#bookmarkList button[type=submit]:hover {
     box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+}
+
+#bookmarkList button[type=button] {
+    margin-top: 5px;
+    background: #efefef;
+    border: 1px solid #636e72;
+    font-family: -apple-system, "Inter", sans-serif;
+    font-size: 11px;
+    width: 60px;
+    height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    /* display: none; */
+}
+
+#bookmarkList button[type=button]:hover {
+    background: #b2bec3;
+    border: #efefef;
+    color: #f6f9fc;
+    /* display: inline-block; */
 }
 
 #overlay {
@@ -178,11 +201,12 @@ body {
     background: #f6f9fc;
     border: 1.5px solid #b2bec3;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
-    transition: box-shadow .5s, transform .2s;
+    transition: box-shadow .5s, transform .2s, height .3s;
 }
 
 .bookmark:hover {
     box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+    height: 43px;
 }
 
 .bookmark:active {
