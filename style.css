@@ -70,7 +70,9 @@ body {
     position: absolute;
     top: 55vh;
     margin-top: 30px;
-    /* width: 80vw; */
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
     transition: all .5s;
 }
 
@@ -79,7 +81,7 @@ body {
 }
 
 #bookmarkList button[type=submit] {
-    width: 200px;
+    width: 183px;
     height: 38px;
     border: 1.5px solid #b2bec3;
     background: #f6f9fc;
@@ -202,6 +204,7 @@ body {
     border: 1.5px solid #b2bec3;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
     transition: box-shadow .5s, transform .2s, height .3s;
+    margin-bottom: 30px;
 }
 
 .bookmark:hover {
