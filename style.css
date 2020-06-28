@@ -203,6 +203,10 @@ body {
     margin-bottom: 30px;
 }
 
+.bookmark:hover {
+    transform: scale(1.05);
+}
+
 .bookmark:active {
     transform: scale(.9);
 }
