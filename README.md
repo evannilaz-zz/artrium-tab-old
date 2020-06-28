@@ -13,3 +13,4 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - Google Search
 - Flex Wrap
 - Background Image
+- Right-click to Remove Bookmark
