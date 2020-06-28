@@ -97,10 +97,6 @@ body {
     transform: scale(.95);
 }
 
-#bookmarkList button[type=submit]:hover {
-    box-shadow: 4px 4px 10px rgba(0,0,0,.2);
-}
-
 #bookmarkList button[type=button] {
     margin-top: 5px;
     background: #efefef;
@@ -112,7 +108,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
-    /* display: none; */
+    display: none;
 }
 
 #bookmarkList button[type=button]:hover {
@@ -207,11 +203,6 @@ body {
     margin-bottom: 30px;
 }
 
-.bookmark:hover {
-    box-shadow: 4px 4px 10px rgba(0,0,0,.2);
-    height: 43px;
-}
-
 .bookmark:active {
     transform: scale(.9);
 }
@@ -220,9 +211,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    min-height: 100vh;
-    max-height: 170vh;
+    width: 100%;
+    min-height: 100%;
     z-index: -1;
 }
 

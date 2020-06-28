@@ -1,41 +1,45 @@
 const bookmarkTab = document.querySelector("#bookmarkList");
 const overlay = document.querySelector("#overlay");
 const closeButton = document.querySelector("#cancel");
-const removeButton = document.querySelectorAll(".remove");
-const bookmark = document.querySelectorAll(".bookmark");
 const bookmarkCreate = overlay.querySelector("#create");
+let bookmarks;
 
 const BOOKMARK_LS = "bookmark";
 
-const bookmarks = [];
+let bookmarkList = [];
 
 function saveBookmark() {
-    localStorage.setItem(BOOKMARK_LS, JSON.stringify(bookmarks));
+    localStorage.setItem(BOOKMARK_LS, JSON.stringify(bookmarkList));
 }
 
 function addBookmark(url,name) {
     const link = document.createElement("a");
-    const br = document.createElement("br");
-    const rmBtn = document.createElement("button");
-    const id = bookmarks.length;
+    const id = bookmarkList.length + 1;
     link.href = url;
     link.innerText = name;
     link.classList.add("bookmark");
     link.id = id;
     link.style.order = id;
-    rmBtn.type = "button";
-    rmBtn.classList.add("remove");
-    rmBtn.innerText = "Remove";
-    link.appendChild(br);
-    link.appendChild(rmBtn);
     bookmarkTab.appendChild(link);
     const bookmarkObject = {
         url: url,
-        name: name
+        name: name,
+        id: id
     }
-    bookmarks.push(bookmarkObject);
+    bookmarkList.push(bookmarkObject);
     saveBookmark();
     hideOverlay();
+}
+
+function removeBookmark(event) {
+    event.preventDefault();
+    const bookmark = event.target;
+    bookmarkTab.removeChild(bookmark);
+    const filtered = bookmarkList.filter((bmk) => {
+        return bmk.id !== parseInt(bookmark.id);
+    })
+    bookmarkList = filtered;
+    saveBookmark();
 }
 
 function showOverlay(event) {
@@ -72,11 +76,12 @@ function init() {
     bookmarkTab.addEventListener("submit",showOverlay);
     closeButton.addEventListener("click",hideOverlay);
     bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
-    bookmark.forEach((bmk) => {
-        bmk.addEventListener("mouseover", function() {
-            console.log(bmk.parentNode);
-        });
-    })
+    setInterval(function() {
+        bookmarks = document.querySelectorAll(".bookmark");
+        bookmarks.forEach((bookmark) => {
+            bookmark.addEventListener("contextmenu", removeBookmark);
+        })
+    }, 1000);
 }
     
 init();
