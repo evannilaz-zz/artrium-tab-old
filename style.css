@@ -230,6 +230,20 @@ body {
     font-size: 13px;
 }
 
+#github {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    font-size: 16px;
+    color: #f6f9fc;
+    text-decoration: none;
+}
+
+#github:hover {
+    text-decoration: underline;
+}
+
 * {
     outline: none;
 }
