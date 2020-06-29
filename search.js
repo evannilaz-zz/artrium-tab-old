@@ -4,8 +4,13 @@ const searchInput = searchForm.querySelector("input");
 function handleSearch(event) {
     event.preventDefault();
     var query = searchInput.value;
-    query = query.replace(/ /g,"%20");
-    location.href = `https://www.google.com/search?q=${query}`;
+    if (query[0] === "/") {
+        query = query.replace("/", "");
+        location.href = `http://${query}`;
+    } else {
+        query = query.replace(/ /g, "%20");
+        location.href = `https://www.google.com/search?q=${query}`;
+    }
 }
 
 function init() {
