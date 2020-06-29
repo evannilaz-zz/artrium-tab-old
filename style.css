@@ -22,6 +22,7 @@ body {
     position: absolute;
     top: 45vh;
     transition: all .5s;
+    display: flex;
 }
 
 #search input[type=text] {
