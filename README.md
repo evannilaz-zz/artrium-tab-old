@@ -15,6 +15,7 @@ Sadly, Artrium is not well supported for mobile.
 - Flex Wrap
 - Background Image
 - Right-click to Remove Bookmark
+- URL Search
 
 ## Image Copyrights
 All of the images are from Unsplash API.
