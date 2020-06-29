@@ -44,11 +44,11 @@ function removeBookmark(event) {
 
 function showOverlay(event) {
     event.preventDefault();
-    overlay.style.transform = "translateY(-90vw)";
+    overlay.style.transform = "translateY(-75vh)";
 }
 
 function hideOverlay() {
-    overlay.style.transform = "translateY(90vw)";
+    overlay.style.transform = "translateY(100vh)";
 }
 
 function handleBookmarkCreate(event) {

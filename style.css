@@ -116,12 +116,11 @@ body {
     background: #b2bec3;
     border: #efefef;
     color: #f6f9fc;
-    /* display: inline-block; */
 }
 
 #overlay {
     box-shadow: 4px 4px 10px rgba(0,0,0,.2);
-    margin-top: 100vw;
+    margin-top: 100vh;
     border-radius: 50px;
     border: 2px solid #b2bec3;
     width: 40vw;
