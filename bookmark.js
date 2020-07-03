@@ -44,11 +44,11 @@ function removeBookmark(event) {
 
 function showOverlay(event) {
     event.preventDefault();
-    overlay.style.transform = "translateY(-75vh)";
+    overlay.style.transform = "translateY(25vh)";
 }
 
 function hideOverlay() {
-    overlay.style.transform = "translateY(100vh)";
+    overlay.style.transform = "translateY(130vh)";
 }
 
 function handleBookmarkCreate(event) {
@@ -73,6 +73,7 @@ function loadBookmark() {
     
 function init() {
     loadBookmark();
+    hideOverlay();
     bookmarkTab.addEventListener("submit",showOverlay);
     closeButton.addEventListener("click",hideOverlay);
     bookmarkCreate.addEventListener("submit", handleBookmarkCreate);

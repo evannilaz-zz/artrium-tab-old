@@ -121,7 +121,6 @@ body {
 
 #overlay {
     box-shadow: 4px 4px 10px rgba(0,0,0,.2);
-    margin-top: 100vh;
     border-radius: 50px;
     border: 2px solid #b2bec3;
     width: 40vw;
