@@ -6,6 +6,12 @@ function handleSearch(event) {
     var query = searchInput.value;
     if (query[0] === "/") {
         query = query.replace("/", "");
+        if (query.includes("https://")) {
+            query = query.replace("https://", "");
+        } else if (query.includes("http://")) {
+            query = query.replace("http://", "");
+        }
+        console.log(query);
         location.href = `http://${query}`;
     } else {
         query = query.replace(/ /g, "%20");
