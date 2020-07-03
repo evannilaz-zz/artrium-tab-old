@@ -8,13 +8,19 @@ This extension lets you to redirect new tabs, which means it can make you able t
 
 (Notice: Artrium is based on my previous project: [Tintious](https://github.com/ldhan0715/tintious).)
 
-## New Features - Version 0.5
+## New Features - Version 0.55
 - Bookmark
 - Google Search
 - Flex Wrap
 - Background Image
 - Right-click to Remove Bookmark
 - URL Search
+
+## How To Use
+Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
+Here is the list of it:
+- You can remove your created bookmark by right-clicking it.
+- You can enter a site by URL by putting slash before the URL (you can either include https/http at the URL, or not).
 
 ## Image Copyrights
 All of the images are from Unsplash API.
