@@ -2,7 +2,7 @@ const body = document.querySelector("body");
 const date = new Date();
 const day = date.getDay();
 
-const dateQuery = {
+const dateQueryGeo = {
     0: "seoul",
     1: "london",
     2: "paris",
@@ -12,9 +12,25 @@ const dateQuery = {
     6: "venice"
 };
 
+const dateQueryArt = {
+    0: "abstract",
+    1: "nature",
+    2: "business",
+    3: "animal",
+    4: "technology",
+    5: "architecture",
+    6: "fashion"
+};
+
 const accessCode = "3CVHz8RtTUrydWpPKmbmNGlOBnZ4zxn6k2YvNn-bjPw";
-let query = dateQuery[day];
+let query;
 let i = 0;
+
+if (day % 2 === 0) {
+    query = dateQueryArt[day];
+} else {
+    query = dateQueryGeo[day];
+}
 
 const random = Math.floor(Math.random() * 10);
 
