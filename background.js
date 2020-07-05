@@ -1,35 +1,36 @@
 const body = document.querySelector("body");
 const date = new Date();
-const day = date.getDay();
+const month = date.getMonth();
+const random = Math.floor(Math.random() * 7);
 
-const dateQueryGeo = {
-    0: "seoul",
-    1: "london",
-    2: "paris",
-    3: "new york",
-    4: "berlin",
-    5: "rome",
-    6: "venice"
-};
-
-const dateQueryArt = {
-    0: "abstract",
-    1: "nature",
-    2: "business",
-    3: "animal",
-    4: "technology",
-    5: "architecture",
-    6: "fashion"
-};
+const dateQuery = {
+    citys: {
+        0: "antartica",
+        1: "london",
+        2: "paris",
+        3: "new york",
+        4: "berlin",
+        5: "rome",
+        6: "venice"
+    },
+    arts: {
+        0: "interior",
+        1: "nature",
+        2: "business",
+        3: "animal",
+        4: "technology",
+        5: "architecture",
+        6: "fashion"
+    }
+}
 
 const accessCode = "3CVHz8RtTUrydWpPKmbmNGlOBnZ4zxn6k2YvNn-bjPw";
 let query;
-let i = 0;
 
-if (day % 2 === 0) {
-    query = dateQueryArt[day];
+if (month % 2 === 0) {
+    query = dateQuery.citys[random]
 } else {
-    query = dateQueryGeo[day];
+    query = dateQuery.arts[random];
 }
 
 const random = Math.floor(Math.random() * 10);
