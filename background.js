@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const date = new Date();
 const month = date.getMonth();
-const random = Math.floor(Math.random() * 7);
+let random = Math.floor(Math.random() * 7);
 
 const dateQuery = {
     citys: {
@@ -33,7 +33,7 @@ if (month % 2 === 0) {
     query = dateQuery.arts[random];
 }
 
-const random = Math.floor(Math.random() * 10);
+random = Math.floor(Math.random() * 10);
 
 function bringPhoto() {
     fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${accessCode}`).then(function(response) {
