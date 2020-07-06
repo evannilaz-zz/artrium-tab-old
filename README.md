@@ -17,8 +17,6 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - URL Search
 - Themes (Available at version 0.6)
 
-(Note: Acrylic theme may slow down or not be available in your PC)
-
 ## How To Use
 Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
 Here is the list of it:
@@ -30,3 +28,4 @@ All of the images are from Unsplash API.
 
 ## Availability
 Mobile is not well supported in Artrium. It will be indicated: 'Sorry, Artrium is not for Mobile'. In addition, I have no plans for mobile version of Artrium.
+Since Acrylic theme contains very much acrylic contents, it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, then the alternative is Glass theme.
