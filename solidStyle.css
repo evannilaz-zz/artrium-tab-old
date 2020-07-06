@@ -1,0 +1,35 @@
+@import url("main.css");
+
+#search input[type=text] {
+    background: #f6f9fc;
+}
+
+#search button {
+    background: rgba(52,152,219);
+}
+
+#search button:hover {
+    background: rgba(41,128,185);
+}
+
+#bookmarkList button[type=submit] {
+    color: black;
+    background: #f6f9fc;
+}
+
+#overlay {
+    background: rgba(246,249,252);
+}
+
+.bookmark {
+    background: #f6f9fc;
+    color: black;
+}
+
+nav {
+    background: #efefef;
+}
+
+nav a {
+    color: #636e72;
+}

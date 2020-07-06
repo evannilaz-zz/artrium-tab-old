@@ -27,7 +27,6 @@ body {
 
 #search input[type=text] {
     float: left;
-    background: none;
     width: 430px;
     height: 40px;
     border-top-left-radius: 28px;
@@ -207,7 +206,7 @@ nav {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 320px;
+    width: 300px;
     height: 45px;
     border-right: 1.25px solid #b2bec3;
     border-bottom: 1.25px solid #b2bec3;
