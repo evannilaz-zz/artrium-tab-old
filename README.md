@@ -15,7 +15,7 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - Background Image
 - Right-click to Remove Bookmark
 - URL Search
-- Acrylic Theme (Available in Version 0.6)
+- Themes (Available at version 0.6)
 
 ## How To Use
 Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
