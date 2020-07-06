@@ -1,0 +1,42 @@
+@import url("main.css");
+
+#search input[type=text] {
+    background: rgba(246,249,252,.75);
+}
+
+#search input[type=text]:focus {
+    background: rgba(246,249,252,.9);
+}
+
+#search button {
+    background: rgba(52,152,219,.7);
+}
+
+#search button:hover {
+    background: rgba(41,128,185,.9);
+}
+
+#bookmarkList button[type=submit] {
+    color: black;
+    background: rgba(246,249,252,.75);
+}
+
+#overlay {
+    background: rgba(246,249,252,.8);
+    backdrop-filter: blur(3px);
+}
+
+.bookmark {
+    background: rgba(246,249,252,.75);
+    color: black;
+}
+
+nav {
+    background: rgba(239,239,239,.7);
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+}
+
+nav a {
+    color: #636e72;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.2);
+}
