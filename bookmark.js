@@ -73,7 +73,6 @@ function loadBookmark() {
     
 function init() {
     loadBookmark();
-    hideOverlay();
     bookmarkTab.addEventListener("submit",showOverlay);
     closeButton.addEventListener("click",hideOverlay);
     bookmarkCreate.addEventListener("submit", handleBookmarkCreate);

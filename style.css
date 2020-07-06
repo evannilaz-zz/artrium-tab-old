@@ -129,6 +129,7 @@ body {
     background: #f6f9fc;
     transition: all .8s;
     color: black;
+    transform: translateY(130vh);
 }
 
 #overlay #header {
