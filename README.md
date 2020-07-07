@@ -8,7 +8,7 @@ This extension lets you to redirect new tabs, which means it can make you able t
 
 (Note: Artrium is based on my previous project: [Tintious](https://github.com/ldhan0715/artrium-todo). Current name of it is Artrium ToDo.)
 
-## New Features - Version 0.6
+## New Features - Version 0.65
 - Bookmark
 - Google Search
 - Flex Wrap
@@ -16,6 +16,7 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - Right-click to Remove Bookmark
 - URL Search
 - Themes: Acrylic/Glass/Solid
+- Improved Acrylic theme's Stablity
 
 ## How To Use
 Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
