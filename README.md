@@ -22,10 +22,12 @@ Since I made Artrium with design-oriented mind, a lot of features are silently p
 Here is the list of it:
 - You can remove your created bookmark by right-clicking it.
 - You can enter a site by URL by putting slash before the URL (you can either include https/http at the URL, or not).
+- You can change the theme of Artrium by moving the slider.
 
 ## Image Copyrights
 All of the images are from Unsplash API.
 
 ## Availability
 Mobile is not well supported in Artrium. It will be indicated: 'Sorry, Artrium is not for Mobile'. In addition, I have no plans for mobile version of Artrium.
-Since Acrylic theme contains very much acrylic contents, it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, then the alternative is Glass theme.
+
+Since acrylic theme contains very much acrylic contents (it blurs the background of element), it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, you may use the alternative: glass theme.
