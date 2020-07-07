@@ -171,7 +171,7 @@ body {
     height: 20px;
     border: 1px solid #b2bec3;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
-    transition: box-shadow .5s, transform .2s, height .3s .05s;
+    transition: box-shadow .5s, transform .2s, height .3s, background .3s, color .3s .05s;
     margin-bottom: 30px;
 }
 
@@ -233,7 +233,7 @@ nav input:hover {
 nav input::-webkit-slider-thumb {
     appearance: none;
     width: 7.5px;
-    height: 12.5px;
+    height: 15px;
     background: #34495e;
     border-radius: 6.25px;
 }

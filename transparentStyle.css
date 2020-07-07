@@ -29,12 +29,10 @@
 .bookmark {
     background: rgba(246,249,252,.75);
     color: black;
-    transition: box-shadow .5s, transform .2s, height .3s, background .3s .05s;
 }
 
 .bookmark:hover {
     background: rgba(246,249,252,.9);
-    color: black;
 }
 
 nav {
