@@ -29,6 +29,12 @@
 .bookmark {
     background: rgba(246,249,252,.75);
     color: black;
+    transition: box-shadow .5s, transform .2s, height .3s, background .3s .05s;
+}
+
+.bookmark:hover {
+    background: rgba(246,249,252,.9);
+    color: black;
 }
 
 nav {
@@ -36,7 +42,7 @@ nav {
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
 }
 
-nav a {
+nav span {
     color: #636e72;
     text-shadow: 2px 2px 10px rgba(0,0,0,.2);
 }
