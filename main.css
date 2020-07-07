@@ -89,6 +89,10 @@ body {
     order: 9999999999999999999999999999;
 }
 
+#bookmarkList button[type=submit]:hover {
+    transform: scale(1.05);
+}
+
 #bookmarkList button[type=submit]:active {
     transform: scale(.95);
 }

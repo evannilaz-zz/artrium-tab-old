@@ -2,7 +2,7 @@
 
 #search input[type=text] {
     backdrop-filter: blur(5px);
-    background: rgba(246,249,252,.5);
+    background: rgba(246,249,252,.3);
     mix-blend-mode: hard-light;
 }
 
@@ -22,6 +22,10 @@
     backdrop-filter: blur(5px);
 }
 
+#bookmarkList button[type=submit]:hover {
+    background: rgba(246,249,252,.5);
+}
+
 #overlay {
     background: rgba(246,249,252,.7);
     backdrop-filter: blur(5px);
@@ -34,7 +38,6 @@
 
 .bookmark:hover {
     background: rgba(246,249,252,.5);
-    color: gray;
 }
 
 nav {
