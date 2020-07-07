@@ -38,6 +38,7 @@
 
 .bookmark:hover {
     background: rgba(246,249,252,.5);
+    color: gray;
 }
 
 nav {

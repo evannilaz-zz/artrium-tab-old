@@ -23,7 +23,6 @@
 
 #overlay {
     background: rgba(246,249,252,.8);
-    backdrop-filter: blur(3px);
 }
 
 .bookmark {

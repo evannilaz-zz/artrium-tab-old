@@ -221,7 +221,7 @@ nav {
 
 nav input {
     appearance: none;
-    height: 7.5px;
+    height: 5px;
     border-radius: 3.25px;
     background: #b2bec3;
     filter: opacity(.7);
@@ -236,8 +236,8 @@ nav input:hover {
 
 nav input::-webkit-slider-thumb {
     appearance: none;
-    width: 7.5px;
-    height: 15px;
+    width: 5px;
+    height: 17px;
     background: #34495e;
     border-radius: 6.25px;
 }
