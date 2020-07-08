@@ -39,17 +39,12 @@ function bringPhoto() {
     fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${accessCode}`).then(function(response) {
         return response.json();
     }).then(function(json) {
-        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            alert("Background Image is not supported for Mobile.");
-        } else {
-            const imgURL = json.results[random].urls.full;
-            const imgAlt = json.results[random].alt_description;
-            const imgOwner = json.results[random].user.name;
-            const imgHeight = json.results[random].height;
-            setBackground(imgURL,imgAlt,imgOwner,imgHeight);
-        }
-        }
-    )
+        const imgURL = json.results[random].urls.full;
+        const imgAlt = json.results[random].alt_description;
+        const imgOwner = json.results[random].user.name;
+        const imgHeight = json.results[random].height;
+        setBackground(imgURL,imgAlt,imgOwner,imgHeight);
+    });
 }
 
 function setBackground(src,alt,owner,height) {
@@ -69,11 +64,3 @@ function init() {
 }
 
 init();
-
-
-function checkMobile() {
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        alert("[Alert] Tintious is not for Mobile, but PC. Thank you.");
-        clearScreen();
-    }
-}
