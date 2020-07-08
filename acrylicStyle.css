@@ -2,7 +2,7 @@
     backdrop-filter: blur(5px);
     background: rgba(246,249,252,.3);
     mix-blend-mode: hard-light;
-    color: rgba(45,52,54,.6);
+    color: rgba(45,52,54,.75);
 }
 
 #search button {
