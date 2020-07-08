@@ -21,7 +21,7 @@
 
 .bookmark {
     background: #f6f9fc;
-    color: black;
+    color: black !important;
 }
 
 nav {
