@@ -31,7 +31,7 @@ All of the images are from Unsplash API.
 ## Availability
 Mobile is not well supported in Artrium. It will be indicated: 'Sorry, Artrium is not for Mobile'. In addition, I have no plans for mobile version of Artrium.
 
-Since acrylic theme contains very much acrylic contents (it blurs the background of element), it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, you may use the alternative: glass theme. Also, acrylic theme works poorly in Firefox browser. I recommend you to use Chrome or Chromium-based browser.
+Since acrylic theme contains very much acrylic contents (it blurs the background of element), it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, you may use the alternative: glass theme. Also, acrylic theme works poorly in Firefox browser. I recommend you to use Chrome or Chromium-based browser, such as Edge, Brave, and etc.
 
 ## Preview
 ![Preview Image](preview.png)
