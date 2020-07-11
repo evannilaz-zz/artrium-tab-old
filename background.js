@@ -28,7 +28,7 @@ const accessCode = "3CVHz8RtTUrydWpPKmbmNGlOBnZ4zxn6k2YvNn-bjPw";
 let query;
 
 if (month % 2 === 0) {
-    query = dateQuery.citys[random]
+    query = dateQuery.citys[random];
 } else {
     query = dateQuery.arts[random];
 }

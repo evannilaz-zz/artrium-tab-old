@@ -1,3 +1,4 @@
+const bdy = document.querySelector("body");
 const bookmarkTab = document.querySelector("#bookmarkList");
 const overlay = document.querySelector("#overlay");
 const closeButton = document.querySelector("#cancel");
@@ -48,7 +49,11 @@ function showOverlay(event) {
 }
 
 function hideOverlay() {
+    const url = bookmarkCreate.querySelector("#url");
+    const name = bookmarkCreate.querySelector("#name");
     overlay.style.transform = "translateY(130vh)";
+    url.value = "";
+    name.value = "";
 }
 
 function handleBookmarkCreate(event) {
