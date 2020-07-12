@@ -8,7 +8,6 @@ function changeTheme(themeNo) {
     } else {
         cssLink.href = "transparentStyle.css";
     }
-    saveTheme();
 }
 
 function loadTheme() {
