@@ -17,13 +17,13 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - URL Search
 - Themes: Acrylic/Glass/Solid
 - Improved Acrylic theme's Stablity
+- Preferences Page
 
 ## How To Use
 Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
 Here is the list of it:
 - You can remove your created bookmark by right-clicking it.
 - You can enter a site by URL by putting slash before the URL (you can either include https/http at the URL, or not).
-- You can change the theme of Artrium by moving the slider.
 
 ## Image Copyrights
 All of the images are from Unsplash API.
