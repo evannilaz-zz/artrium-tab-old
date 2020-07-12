@@ -8,7 +8,7 @@ This extension lets you to redirect new tabs, which means it can make you able t
 
 (Note: Artrium is based on my previous project: [Tintious](https://github.com/ldhan0715/artrium-todo). Current name of it is Artrium ToDo.)
 
-## New Features - Version 0.65
+## New Features - Version 0.7
 - Bookmark
 - Google Search
 - Flex Wrap
