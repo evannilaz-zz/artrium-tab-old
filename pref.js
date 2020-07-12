@@ -1,7 +1,7 @@
 const cssLink = document.querySelector("link");
 const themeRange = document.querySelector("#range");
 const themeText = document.querySelector("#themeI");
-const switchBackground = document.querySelectorAll(".switchBackground");
+const swtBg = document.querySelectorAll(".swtBg");
 let textViewable = true;
 
 function savePref() {
@@ -11,11 +11,11 @@ function savePref() {
 
 function handleSwtBClick(event) {
     const swt = event.target;
-    if (swt.className === "switchBackground" || swt.className === "switchBackground swtBY") {
-        const swtTgg = swt.querySelector(".switchToggle");
+    if (swt.className === "swtBg" || swt.className === "swtBg swtBY") {
+        const swtTgg = swt.querySelector(".swtTg");
         swt.classList.toggle("swtBY");
         swtTgg.classList.toggle("swtTY");
-        if (swt.className === "switchBackground") {
+        if (swt.className === "swtBg") {
             textViewable = true;
         } else {
             textViewable = false;
@@ -24,7 +24,7 @@ function handleSwtBClick(event) {
         const swtBg = swt.parentElement;
         swtBg.classList.toggle("swtBY");
         swt.classList.toggle("swtTY");
-        if (swt.className === "switchToggle") {
+        if (swt.className === "swtTg") {
             textViewable = true;
         } else {
             textViewable = false;
@@ -48,8 +48,8 @@ function loadTheme() {
     }
     if (textViewable !== null) {
         if (textViewable === false) {
-            const swt = document.querySelector(".switchBackground");
-            const swtTgg = swt.querySelector(".switchToggle");
+            const swt = document.querySelector(".swtBg");
+            const swtTgg = swt.querySelector(".swtTg");
             swt.classList.toggle("swtBY");
             swtTgg.classList.toggle("swtTY");
         }
@@ -68,7 +68,7 @@ function init() {
         }
         savePref();
     });
-    switchBackground.forEach((swt) => {
+    swtBg.forEach((swt) => {
         swt.addEventListener("click", handleSwtBClick);
     });
 }
