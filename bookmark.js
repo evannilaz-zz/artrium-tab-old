@@ -85,8 +85,14 @@ function init() {
         bookmarks = document.querySelectorAll(".bookmark");
         bookmarks.forEach((bookmark) => {
             bookmark.addEventListener("contextmenu", removeBookmark);
-        })
+        });
     }, 1000);
+    const textViewable = JSON.parse(localStorage.getItem("textViewable"));
+    if (textViewable === false) {
+        bookmarks.forEach((bookmark) => {
+            bookmark.style.color = "rgb(45,52,54)"
+        })
+    }
 }
     
 init();
