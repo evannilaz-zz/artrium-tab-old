@@ -21,10 +21,13 @@ function handleSearch(event) {
 
 function loadTextAvailable() {
     const textViewable = JSON.parse(localStorage.getItem("textViewable"));
+    const plcViewable = JSON.parse(localStorage.getItem("plcViewable"));
     if (textViewable === false) {
         searchInput.style.color = "#353b48";
+    } if (plcViewable === false) {
         searchInput.classList.add("sp");
     }
+    
 }
 
 function init() {

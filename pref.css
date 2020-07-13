@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 125vh;
+    height: 145vh;
 }
 
 main {
@@ -114,11 +114,11 @@ a:hover {
     cursor: pointer;
 }
 
-.swtBY {
+.swtBgOn {
     background: #0366d6;
 }
 
-.swtTY {
+.swtTgOn {
     transform: translateX(30px);
 }
 
