@@ -35,4 +35,4 @@ Mobile is not well supported in Artrium. It will be indicated: 'Sorry, Artrium i
 Since acrylic theme contains very much acrylic contents (it blurs the background of element), it may slow down your PC due to the process of blurring the background of element. If it slows down your PC, you may use the alternative: glass theme. Also, acrylic theme works poorly in Firefox browser. I recommend you to use Chrome or Chromium-based browser, such as Edge, Brave, and etc.
 
 ## Preview
-<div style="border-radius: 8px">![Preview Image](preview.png)</div>
+![Preview Image](preview.png)
