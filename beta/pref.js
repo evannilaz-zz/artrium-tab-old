@@ -19,7 +19,7 @@ function clearPref() {
     localStorage.removeItem("textViewable");
     localStorage.removeItem("beta");
     localStorage.removeItem("plcViewable");
-    location.reload();
+    location.replace("https://ldhan0715.github.io/artrium");
 }
 
 function handleSwtClick(event) {
