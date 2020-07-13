@@ -82,17 +82,17 @@ function init() {
     closeButton.addEventListener("click",hideOverlay);
     bookmarkCreate.addEventListener("submit", handleBookmarkCreate);
     setInterval(function() {
+        const textViewable = JSON.parse(localStorage.getItem("textViewable"));
         bookmarks = document.querySelectorAll(".bookmark");
         bookmarks.forEach((bookmark) => {
             bookmark.addEventListener("contextmenu", removeBookmark);
         });
+        if (textViewable === false) {
+            bookmarks.forEach((bookmark) => {
+                bookmark.style.color = "#353b48";
+            });
+        }
     }, 1000);
-    const textViewable = JSON.parse(localStorage.getItem("textViewable"));
-    if (textViewable === false) {
-        bookmarks.forEach((bookmark) => {
-            bookmark.style.color = "rgb(45,52,54)"
-        })
-    }
 }
     
 init();

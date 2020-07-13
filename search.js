@@ -23,6 +23,7 @@ function loadTextAvailable() {
     const textViewable = JSON.parse(localStorage.getItem("textViewable"));
     if (textViewable === false) {
         searchInput.style.color = "#353b48";
+        searchInput.classList.add("sp");
     }
 }
 

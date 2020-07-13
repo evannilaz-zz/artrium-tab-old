@@ -262,3 +262,7 @@ nav span {
 #pref:hover {
     text-decoration: underline;
 }
+
+.sp::placeholder {
+    color: #353b48;
+}
