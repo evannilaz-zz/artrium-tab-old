@@ -35,13 +35,13 @@ function handleSwtClick(event) {
         const swtBg = swt.parentElement;
         swtBg.classList.toggle("swtBY");
         swt.classList.toggle("swtTY");
-        if (swt.id === "txtTrb") {
+        if (swtBg.id === "txtTrb") {
             if (!swt.className.includes(" ")) {
                 textViewable = true;
             } else {
                 textViewable = false;
             }
-        } else if (swt.id === "beta") {
+        } else if (swtBg.id === "beta") {
             if (!swt.className.includes(" ")) {
                 betaFeature = false;
             } else {
