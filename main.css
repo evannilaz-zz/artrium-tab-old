@@ -262,7 +262,7 @@ nav span {
     width: 24px;
     transition: all .2s;
     filter: opacity(.6);
-    background: rgba(0,0,0,.2);
+    /* background: rgba(0,0,0,.2); */
     padding: 5px;
     border-radius: 17px;
 }

@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120vh;
+    height: 125vh;
 }
 
 main {
@@ -35,6 +35,10 @@ h1, h2 {
     padding: 15px;
     width: 700px;
     font-weight: 600;
+}
+
+h2 {
+    width: 500px;
 }
 
 h3 {
@@ -122,4 +126,16 @@ a:hover {
     position: fixed;
     top: 15px;
     left: 15px;
+    font-weight: 600;
+}
+
+#github {
+    height: 25px;
+    filter: opacity(.6);
+    transition: all .2s;
+    margin-top: 50px;
+}
+
+#github:hover {
+    filter: opacity(1);
 }
