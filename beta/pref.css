@@ -1,0 +1,141 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html { font-family: 'Inter var', sans-serif; }
+}
+
+* {
+    font-family: -apple-system, "Inter", sans-serif !important;
+    outline: none;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 145vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-top: 50px;
+    border-bottom: 1.5px solid gray;
+    padding: 15px;
+    width: 700px;
+    font-weight: 600;
+}
+
+h2 {
+    width: 500px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form>div {
+    margin-top: 40px;
+    border: 1.5px solid gray;
+    width: 400px;
+    border-radius: 8px;
+    padding: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#range {
+    appearance: none;
+    height: 5px;
+    border-radius: 3.25px;
+    background: #b2bec3;
+    filter: opacity(.7);
+    transition: all .2s;
+    width: 150px;
+}
+
+#range:hover {
+    filter: opacity(1);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 5px;
+    height: 17px;
+    background: #34495e;
+    border-radius: 6.25px;
+}
+
+a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.swtBg {
+    height: 29.75px;
+    border-radius: 15px;
+    background: gray;
+    width: 60px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.swtTg {
+    height: 20px;
+    border-radius: 15px;
+    background: white;
+    width: 20px;
+    margin: 5px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.swtBgOn {
+    background: #0366d6;
+}
+
+.swtTgOn {
+    transform: translateX(30px);
+}
+
+#home {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-weight: 600;
+}
+
+#github {
+    height: 25px;
+    filter: opacity(.6);
+    transition: all .2s;
+    margin-top: 50px;
+}
+
+#github:hover {
+    filter: opacity(1);
+}

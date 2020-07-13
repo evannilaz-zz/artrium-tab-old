@@ -1,5 +1,4 @@
 const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-const contextMenu = document.querySelector("#contextMenu");
 
 function checkMobile() {
     if (mobile.test(navigator.userAgent)) {
@@ -7,16 +6,8 @@ function checkMobile() {
     }
 }
 
-function checkBeta() {
-    const betaFeature = JSON.parse(localStorage.getItem("beta"));
-    if (betaFeature === true) {
-        location.replace("beta/index.html");
-    }
-}
-
 function init() {
     checkMobile();
-    checkBeta();
 }
 
 init();
