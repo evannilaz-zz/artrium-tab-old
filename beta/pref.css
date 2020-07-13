@@ -139,3 +139,20 @@ a:hover {
 #github:hover {
     filter: opacity(1);
 }
+
+#delPref {
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    background: #f6f9fc;
+    color: #cb2431;
+    border: 1.5px solid #b2bec3;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+#delPref:hover {
+    background: #cb2431;
+    color: #f6f9fc;
+    border: 1.5px solid #cb2431;
+}

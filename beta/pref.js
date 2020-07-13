@@ -2,6 +2,7 @@ const cssLink = document.querySelector("link");
 const themeRange = document.querySelector("#range");
 const themeText = document.querySelector("#themeI");
 const swtBg = document.querySelectorAll(".swtBg");
+const prefDel = document.querySelector("#delPref");
 let textViewable = true;
 let plcViewable = true;
 let betaFeature = false;
@@ -11,6 +12,14 @@ function savePref() {
     localStorage.setItem("textViewable", JSON.stringify(textViewable));
     localStorage.setItem("beta", JSON.stringify(betaFeature));
     localStorage.setItem("plcViewable", JSON.stringify(plcViewable));
+}
+
+function clearPref() {
+    localStorage.removeItem("theme");
+    localStorage.removeItem("textViewable");
+    localStorage.removeItem("beta");
+    localStorage.removeItem("plcViewable");
+    location.reload();
 }
 
 function handleSwtClick(event) {
@@ -133,6 +142,7 @@ function init() {
     swtBg.forEach((swt) => {
         swt.addEventListener("click", handleSwtClick);
     });
+    prefDel.addEventListener("click", clearPref);
 }
 
 init();
