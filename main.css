@@ -256,13 +256,20 @@ nav span {
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 17px;
-    color: white;
-    text-decoration: none;
 }
 
-#pref:hover {
-    text-decoration: underline;
+#pref img {
+    width: 24px;
+    transition: all .2s;
+    filter: opacity(.6);
+    background: rgba(0,0,0,.2);
+    padding: 5px;
+    border-radius: 17px;
+}
+
+#pref img:hover {
+    transform: rotate(30deg);
+    filter: opacity(1);
 }
 
 .sp::placeholder {
