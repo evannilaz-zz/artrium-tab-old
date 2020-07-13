@@ -5,7 +5,7 @@ html { font-family: 'Inter var', sans-serif; }
 }
 
 * {
-    font-family: -apple-system, "Inter", sans-serif;
+    font-family: -apple-system, "Inter", sans-serif !important;
     outline: none;
     text-align: center;
     user-select: none;

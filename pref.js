@@ -52,7 +52,7 @@ function handleSwtClick(event) {
     savePref();
 }
 
-function loadTheme() {
+function loadPref() {
     const theme = localStorage.getItem("theme");
     const textViewable = JSON.parse(localStorage.getItem("textViewable"));
     const betaFeature = JSON.parse(localStorage.getItem("beta"));
@@ -84,7 +84,7 @@ function loadTheme() {
 }
 
 function init() {
-    loadTheme();
+    loadPref();
     themeRange.addEventListener("input", () => {
         if (themeRange.value === "1") {
             themeText.innerText = "Theme: Acrylic";
