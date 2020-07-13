@@ -62,6 +62,7 @@ function handleBookmarkCreate() {
     const url = crtBkTab.querySelector("#url");
     const name = crtBkTab.querySelector("#name");
     addBookmark(url.value,name.value);
+    alert("Bookmark successfully created!");
     url.value = "";
     name.value = "";
 }
