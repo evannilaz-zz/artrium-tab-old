@@ -272,6 +272,10 @@ nav span {
     filter: opacity(1);
 }
 
+#pref img:active {
+    transform: scale(.9) rotate(30deg);
+}
+
 .sp::placeholder {
     color: #353b48;
 }
