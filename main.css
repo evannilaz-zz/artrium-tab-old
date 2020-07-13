@@ -7,6 +7,8 @@ html { font-family: 'Inter', sans-serif; }
 * {
     font-family: -apple-system, "Inter", sans-serif;
     outline: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 body {
