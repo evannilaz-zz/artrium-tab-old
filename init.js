@@ -10,7 +10,7 @@ function checkMobile() {
 function checkBeta() {
     const betaFeature = JSON.parse(localStorage.getItem("beta"));
     if (betaFeature === true) {
-        location.replace("beta/index.html");
+        location.replace("https://ldhan0715.github.io/artrium-beta");
     }
 }
 
