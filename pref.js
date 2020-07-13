@@ -3,31 +3,50 @@ const themeRange = document.querySelector("#range");
 const themeText = document.querySelector("#themeI");
 const swtBg = document.querySelectorAll(".swtBg");
 let textViewable = true;
+let betaFeature = false;
 
 function savePref() {
     localStorage.setItem("theme", themeRange.value);
     localStorage.setItem("textViewable", JSON.stringify(textViewable));
+    localStorage.setItem("beta", JSON.stringify(betaFeature));
 }
 
-function handleSwtBClick(event) {
+function handleSwtClick(event) {
     const swt = event.target;
     if (swt.className === "swtBg" || swt.className === "swtBg swtBY") {
         const swtTgg = swt.querySelector(".swtTg");
         swt.classList.toggle("swtBY");
         swtTgg.classList.toggle("swtTY");
-        if (swt.className === "swtBg") {
-            textViewable = true;
-        } else {
-            textViewable = false;
+        if (swt.id === "txtTrb") {
+            if (!swt.className.includes(" ")) {
+                textViewable = true;
+            } else {
+                textViewable = false;
+            }
+        } else if (swt.id === "beta") {
+            console.log(swt);
+            if (!swt.className.includes(" ")) {
+                betaFeature = false;
+            } else {
+                betaFeature = true;
+            }
         }
     } else {
         const swtBg = swt.parentElement;
         swtBg.classList.toggle("swtBY");
         swt.classList.toggle("swtTY");
-        if (swt.className === "swtTg") {
-            textViewable = true;
-        } else {
-            textViewable = false;
+        if (swt.id === "txtTrb") {
+            if (!swt.className.includes(" ")) {
+                textViewable = true;
+            } else {
+                textViewable = false;
+            }
+        } else if (swt.id === "beta") {
+            if (!swt.className.includes(" ")) {
+                betaFeature = false;
+            } else {
+                betaFeature = true;
+            }
         }
     }
     savePref();
@@ -36,6 +55,7 @@ function handleSwtBClick(event) {
 function loadTheme() {
     const theme = localStorage.getItem("theme");
     const textViewable = JSON.parse(localStorage.getItem("textViewable"));
+    const betaFeature = JSON.parse(localStorage.getItem("beta"));
     if (theme !== null) {
         themeRange.value = theme;
         if (theme === "1") {
@@ -46,9 +66,16 @@ function loadTheme() {
             themeText.innerText = "Theme: Glass";
         }
     }
-    if (textViewable !== null) {
+    if (textViewable !== null || betaFeature !== null) {
         if (textViewable === false) {
-            const swt = document.querySelector(".swtBg");
+            const swt = document.querySelector("#txtTrb.swtBg");
+            const swtTgg = swt.querySelector(".swtTg");
+            swt.classList.toggle("swtBY");
+            swtTgg.classList.toggle("swtTY");
+        }
+        
+        if (betaFeature === true) {
+            const swt = document.querySelector("#beta.swtBg");
             const swtTgg = swt.querySelector(".swtTg");
             swt.classList.toggle("swtBY");
             swtTgg.classList.toggle("swtTY");
@@ -69,7 +96,7 @@ function init() {
         savePref();
     });
     swtBg.forEach((swt) => {
-        swt.addEventListener("click", handleSwtBClick);
+        swt.addEventListener("click", handleSwtClick);
     });
 }
 

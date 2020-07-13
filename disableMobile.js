@@ -4,9 +4,14 @@ function checkMobile() {
     }
 }
 
+function checkBeta() {
+    const betaFeature = JSON.parse(localStorage.getItem("beta"));
+}
+
 
 function init() {
     checkMobile();
+    checkBeta();
 }
 
 init();
