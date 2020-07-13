@@ -90,8 +90,7 @@ a:hover {
 }
 
 .swtBg {
-    display: flex;
-    height: 30px;
+    height: 29.75px;
     border-radius: 15px;
     background: gray;
     width: 60px;
