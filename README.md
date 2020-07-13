@@ -18,6 +18,7 @@ This extension lets you to redirect new tabs, which means it can make you able t
 - Themes: Acrylic/Glass/Solid
 - Improved Acrylic theme's Stablity
 - Preferences Page
+- Beta Features (Available on v0.75)
 
 ## How To Use
 Since I made Artrium with design-oriented mind, a lot of features are silently placed. You may not recognize the features.
